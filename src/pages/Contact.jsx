@@ -136,7 +136,7 @@ const handleSubmit = async (e) => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <form onSubmit={handleSubmit}>
+            {/* <form onSubmit={handleSubmit}>
 
 <input type="hidden" name="_captcha" value="false" />
 <input type="hidden" name="_template" value="table" />
@@ -177,7 +177,7 @@ const handleSubmit = async (e) => {
                 ></textarea>
               </div>
               <button type="submit" className="btn btn-primary submit-btn">Send Message</button>
-            </form>
+            </form> */}
           </motion.div>
         </div>
       </div>
