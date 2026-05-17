@@ -37,26 +37,10 @@ export const userData = {
       ]
     },
     {
-      role: "Freelance MERN Stack Developer",
-      company: "Self-Employed",
-      location: "Kozhikode, India",
-      duration: "Nov 2024 - Feb 2025",
-      description: [
-        "Full-Stack Development: Design and develop responsive web applications using MongoDB, Express.js, React.js, and Node.js.",
-        "Client Collaboration: Communicate with clients to gather requirements, define project scopes, and ensure successful project delivery.",
-        "Custom Solutions: Build tailored solutions for clients, integrating APIs, third-party services, and databases to meet their specific needs.",
-        "End-to-End Project Management: Handle all aspects of project execution, including planning, coding, testing, and deployment.",
-        "UI/UX Implementation: Create user-friendly interfaces with React.js and ensure seamless front-end experiences.",
-        "Backend Development: Develop scalable and efficient server-side logic using Node.js and Express.js.",
-        "Database Design: Design and manage MongoDB databases, ensuring optimal performance and data integrity.",
-        "Continuous Learning: Stay updated with the latest technologies and trends in the MERN stack ecosystem to deliver modern solutions."
-      ]
-    },
-    {
       role: "Software Engineer",
       company: "Real Information Technology Solutions",
       location: "Kozhikode, India",
-      duration: "Nov 2024 - Feb 2024",
+      duration: "March 2024- Feb 2025",
       description: [
         "Client Training: Train clients about the software.",
         "Software support: Communicate with clients to gather requirements, define project scopes, and ensure successful project delivery.",
