@@ -4,7 +4,7 @@ export const userData = {
   location: "Kozhikode, Kerala, India",
   phone: "+91 9633063728",
   email: "nishank855@gmail.com",
-  linkedin: "LinkedIn", // You can replace this with actual URL later
+  linkedin: "https://www.linkedin.com/in/muhammed-nishan-k-57222a248/", 
   profileSummary: "As a skilled MERN stack developer with 2 years and 10 months of experience, I specialize in building scalable, efficient, and user-friendly web applications. I am eager to contribute my expertise in full-stack development and problem-solving to innovative projects that drive business success and enhance user experiences.",
   
   education: [

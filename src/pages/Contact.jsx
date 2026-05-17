@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin } from 'react-icons/fa';
+import Swal from 'sweetalert2';
 import { userData } from '../data';
 import './Contact.css';
 
@@ -11,12 +12,60 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Normally you'd send an email here using EmailJS or your backend
-    alert('Thank you for reaching out! This is a demo form.');
-    setFormData({ name: '', email: '', message: '' });
-  };
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  Swal.fire({
+    title: 'Sending Message...',
+    text: 'Please wait while your message is being sent.',
+    allowOutsideClick: false,
+    didOpen: () => {
+      Swal.showLoading();
+    }
+  });
+
+  try {
+    const form = new FormData();
+
+    form.append("name", formData.name);
+    form.append("email", formData.email);
+    form.append("message", formData.message);
+    form.append("_subject", "New Message from Portfolio Website");
+    form.append("_captcha", "false");
+
+    const response = await fetch(
+      "https://formsubmit.co/ajax/nishank855@gmail.com",
+      {
+        method: "POST",
+        body: form,
+      }
+    );
+
+    const result = await response.json();
+
+    if (result.success === "true") {
+      Swal.fire({
+        icon: "success",
+        title: "Message Sent!",
+        text: "Thank you for reaching out.",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        message: ""
+      });
+    }
+  } catch (error) {
+    console.log(error);
+
+    Swal.fire({
+      icon: "error",
+      title: "Failed",
+      text: "Unable to send message"
+    });
+  }
+};
 
   return (
     <div className="contact-page section" style={{marginTop: 'var(--nav-height)'}}>
@@ -88,11 +137,14 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
           >
             <form onSubmit={handleSubmit}>
+
+<input type="hidden" name="_captcha" value="false" />
+<input type="hidden" name="_template" value="table" />
               <div className="form-group">
                 <label htmlFor="name">Your Name</label>
                 <input 
                   type="text" 
-                  id="name" 
+                  id="name"  
                   name="name" 
                   value={formData.name}
                   onChange={handleChange}
