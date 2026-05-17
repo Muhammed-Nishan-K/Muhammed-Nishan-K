@@ -81,7 +81,7 @@ export const userData = {
     {
       title: "CRM Application",
       linkType: "GitHub",
-      link: "#",
+      link: "https://github.com/AvivDigitalpunchin/AvivPunchinpunchout.git",
       description: [
         "Designed and developed a comprehensive Customer Relationship Management (CRM) application.",
         "Built using the MERN stack (MongoDB, Express.js, React.js, Node.js) for high performance and scalability.",
@@ -92,7 +92,7 @@ export const userData = {
     {
       title: "RedStore E-Commerce Application",
       linkType: "GitHub",
-      link: "#",
+      link: "https://github.com/Muhammed-Nishan-K/RedStore.git",
       description: [
         "Designed and developed a fully responsive e-commerce web application using Ejs, HTML, CSS and Bootstrap, MongoDb.",
         "Integrated payment gateways and enhanced user authentication and authorization systems.",
@@ -135,7 +135,7 @@ export const userData = {
     },
     {
       title: "Photo Scan E-Commerce Application",
-      linkType: "GitHub",
+      linkType: "",
       link: "#",
       description: [
         "Designed and developed a fully responsive e-commerce web application using ReactJs, Tailwind CSS, MongoDB, Express, NodeJs, Cloudinary.",
@@ -147,7 +147,7 @@ export const userData = {
     {
       title: "Kode and Klick Company Portfolio",
       linkType: "LIVE",
-      link: "#",
+      link: "https://cnc-portfolio.vercel.app/",
       description: [
         "Designed and developed a comprehensive company portfolio to showcase Kode & Klick’s services and expertise.",
         "Created a visually engaging and responsive design to highlight the company’s diverse project offerings.",
@@ -157,7 +157,7 @@ export const userData = {
     },
     {
       title: "Zeecode Solutions Company Portfolio",
-      linkType: "LIVE",
+      linkType: "",
       link: "#",
       description: [
         "Designed and developed a comprehensive company portfolio to showcase Zeecode solutions’s services and expertise.",
@@ -169,7 +169,7 @@ export const userData = {
     {
       title: "Kinsuki Cafe Qrcode Menu",
       linkType: "LIVE",
-      link: "#",
+      link: "https://kinsuki-menu.vercel.app/",
       description: [
         "Developed a Digital QR Code Menu for Kinsuki Cafe to enhance customer convenience, enabling seamless access to the menu via mobile devices and reducing the reliance on printed materials.",
         "Role: Designed, implemented, and tested the QR code solution, ensuring easy usability and integration with the cafe's existing systems."
